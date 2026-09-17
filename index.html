@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oye Kajukatli 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+  <div class="noise"></div>
+
+  <main>
+    <section class="screen active" id="password">
+      <div class="card password-card">
+        <div class="eyebrow">01 — OYE KAJUKATLI..</div>
+        <h1>Aaj tumhare liye<br><span>kuch banaya h…</span></h1>
+        <p class="soft">but ussey pehle… 👀🎀</p>
+        <div class="lock">🔐</div>
+        <input id="passInput" type="text" inputmode="numeric" maxlength="5" placeholder="DD/MM">
+        <p class="hint">Password hint: <b>KAJUKATLI'S BIRTHDAY</b></p>
+        <button onclick="checkPassword()">UNLOCK THE SURPRISE ✨</button>
+        <p id="error" class="error"></p>
+      </div>
+    </section>
+
+    <section class="screen" id="entry">
+      <div class="content center">
+        <div class="eyebrow">03 — SECRET ENTRY</div>
+        <div class="giant">OYE KAJUKATLI… 👀</div>
+        <p>Aaj tumhare liye kuch banaya hai…<br>par pehle ek chhota sa rule hai.</p>
+        <button onclick="go('cinematic')">CHALO DEKHTI HUU😭🎀</button>
+      </div>
+    </section>
+
+    <section class="screen" id="cinematic">
+      <div class="content center">
+        <div class="eyebrow">04 — CINEMATIC REVEAL</div>
+        <div class="cinematic-text" id="cinematicText"></div>
+      </div>
+    </section>
+
+    <section class="screen" id="surprise">
+      <div class="content">
+        <div class="eyebrow">05 — SURPRISE!!! 🤭</div>
+        <h2>Birthday girl spotted. 🌷</h2>
+        <div class="photo-grid">
+          <figure class="photo large"><img src="photo1.jpg" alt="Photo 1"><figcaption>BIRTHDAY GIRL KA PURANA VERSION..🤭🌷</figcaption></figure>
+          <figure class="photo"><img src="photo2.jpg" alt="Photo 2"><figcaption>SIMPLE SI PHOTO PAR VIBE PURI 10/10!! 🧿🩷</figcaption></figure>
+          <figure class="photo"><img src="photo3.jpg" alt="Photo 3"><figcaption>KAJUKATLI SPOTTED BEING CHTIEE AGAIN! 🤭</figcaption></figure>
+          <figure class="photo"><img src="photo4.jpg" alt="Photo 4"><figcaption>YEH SMILE HUMESHA SAVE KARKE RAKHNA..😁🌷</figcaption></figure>
+          <figure class="photo"><img src="photo5.jpg" alt="Photo 5"><figcaption>ISS PHOTO ME TOH MADAM KA APNA HEE SWAG HAI..😁🧿</figcaption></figure>
+          <figure class="photo large"><img src="photo6.jpg" alt="Photo 6"><figcaption>AUR ISME TOH EKDM CHAAND LAGRHI H CHAAND! 🧿🤭🌷</figcaption></figure>
+        </div>
+        <button onclick="go('cards')">AAGE BHI KUCH HAI… 👀</button>
+      </div>
+    </section>
+
+    <section class="screen" id="cards">
+      <div class="content">
+        <div class="eyebrow">06 — KAJUKATLI KE BAARE MEIN…</div>
+        <h2>Kuch baatein jo bolni zaroori hain. 🩷</h2>
+        <div class="cards">
+          <article>“Teri sabse dangerous ability: bina kuch kiye mood theek kar dena 🤭😋”</article>
+          <article>“Teri dosti honestly kaafi special hai 🫶”</article>
+          <article>“Kabhi kabhi tu mujhe naaraz krdeti hai… par wapas meri narazgi durr bhi kr deti h...😭”</article>
+          <article>“Kabhi kabhi mai jealous bhi ho jata huu..🫠 Lekin tu meri jealousy bhi durr kar deti h🤭”</article>
+        </div>
+        <button onclick="go('cake')">NEXT SURPRISE 🎂</button>
+      </div>
+    </section>
+
+    <section class="screen" id="cake">
+      <div class="content center">
+        <div class="eyebrow">07 — BIRTHDAY CAKE 🎂</div>
+        <div class="cake" onclick="celebrate()">🎂</div>
+        <h2>Chal pgli, candles bujha aur wish maang ✨</h2>
+        <p class="soft">Tap the cake… 🎀</p>
+        <button onclick="go('letter')">LETTER KHOLO 💌</button>
+      </div>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="content center">
+        <div class="eyebrow">08 — EMOTIONAL MESSAGE 💌</div>
+        <button id="letterBtn" onclick="openLetter()">LETTER KHOLO</button>
+        <div class="letter-box" id="letterBox"><span id="typed"></span><span class="cursor">|</span></div>
+      </div>
+    </section>
+
+    <section class="screen final" id="final">
+      <div class="final-content">
+        <div class="tiny">ONE IN A MILLION ✦</div>
+        <h1>HAPPIESTTT<br>BIRTHDAYYY<br><span>KAJUKATLI 🩷</span></h1>
+        <p>Bas aise hi hamesha haste rehna,<br>Bakchodi karti rehna,<br>aur haan… mujhe bhoolna mat. 🤭🫶</p>
+        <div class="sparkles">✦　♡　✦　♡　✦</div>
+      </div>
+    </section>
+  </main>
+
+  <div id="fx"></div>
+  <script src="script.js"></script>
+</body>
+          </html>
