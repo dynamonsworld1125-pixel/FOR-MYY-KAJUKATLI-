@@ -43,10 +43,13 @@ function celebrate(){
   for(let i=0;i<55;i++){const p=document.createElement('div');p.className='particle';p.textContent=['🩷','♡','✦','✨'][Math.floor(Math.random()*4)];p.style.setProperty('--x',(Math.random()*520-260)+'px');p.style.setProperty('--y',(Math.random()*-420-80)+'px');fx.appendChild(p);setTimeout(()=>p.remove(),1900)}
 }
 const letter=`Ananya, pata hai… har kisi ke saath memories nahi banti.
+
 Kuch log bas life mein aa jaate hain aur phir memories khud banne lagti hain.
 Tu unhi logon mein se hai. 🩷🤭
 
+
 Hum dono ko saathme jyda time nhi hua par fir bhi aisa lgta h ki hum dono saalon se dost h aisi friendship hogyi h humari..😭🌷
+
 
 Humari friendship aisehi bani rahe bss yahi pray krta huu bhagwan se aur bhagwan se yeh bhi pray krta huu ki mujhe har janam me tu as a bestt freinddd mile 🧿🤭
 
